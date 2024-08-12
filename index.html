@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!-- Link para instalar o bootstrap CSS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Link para instalar as fontes do google  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Link para instalar as fontes do google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link para instalar as fontes do google  -->   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Link para instalar os icones do bootstrap  -->
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="icon" href="./images/shop.svg">
+    <title>Sabores do Chef Bistrô</title>
+
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">
+                <i class="bi bi-shop me-1"></i>
+                Sabores do Chef Bistrô
+            </h1>
+            <button id="buttonMenu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+                Menu
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-lg-flex">
+                    <li class="nav-item fw-bold"> <!-- O "fw-bold" significa "font weight = bold"  -->
+                        <a href="#sobre-o-restaurante" class="nav-link mt-3 mt-md-0">
+                            <i class="bi bi-house-door me-1"></i> <!-- O "me-1" significa margin-end (margin-right) -->
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Agendamento
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/slide1.jpg" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide2.jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide3.jpg" alt="Umas mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title mt-3 mt-md-0">Sobre <span>o Restaurante</span></h2>
+                            <p>
+                                Nosso restaurante combina sabores autênticos e um ambiente acolhedor, proporcionando uma experiência gastronômica única. 
+                                Valorizamos a qualidade dos ingredientes e o atendimento, garantindo que cada visita seja inesquecível.
+                            </p>
+                            <h3 class="section-title">Sobre <span>o Espaço</span></h3>
+                            <p>
+                                Nosso espaço é projetado para o conforto de todos, com capacidade para 90 pessoas, 
+                                um ambiente acolhedor para famílias e um espaço especial para crianças. 
+                                Além disso, somos um restaurante Petfriend, onde seu animal de estimação é bem-vindo.
+                            </p>
+                            <ul>
+                                <li>Espaço para 90 pessoas</li>
+                                <li>Temos espaço kids</li>
+                                <li>Somos Petfriend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span>as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 mb-3 mt-3">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p>
+                            Celebre seu aniversário conosco com um buffet completo! Oferecemos uma variedade de bolos, salgadinhos, 
+                            além de opções de almoço ou jantar para tornar seu dia ainda mais especial.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 mb-3 mt-3">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepção para casamentos
+                        </h3>
+                        <p>
+                            Transforme seu casamento em um evento inesquecível com nossa ajuda. Disponibilizamos uma ampla seleção de menus sofisticados 
+                            e serviços personalizados para atender às suas necessidades e tornar seu grande dia perfeito.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 mb-3 mt-3">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações
+                        </h3>
+                        <p>
+                            Organize suas confraternizações com estilo e conforto. Oferecemos opções de catering 
+                            flexíveis e espaços acolhedores para que você e seus convidados possam aproveitar ao máximo cada momento juntos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 mb-3 mb-md-0">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+
+                            <!-- Menu Bebidas sem alcool -->
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Refrigerante Coca-Cola, com opcional de gelo e limão.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Delicioso suco natural de laranja, com opcional de açucar e gelo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Refrigerante Coca-Cola, com opcional de gelo e limão.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Delicioso suco natural de laranja, com opcional de açucar e gelo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Delicioso suco natural de laranja, com opcional de açucar e gelo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Refrigerante Coca-Cola, com opcional de gelo e limão.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Menu Bebidas alcoólicas -->
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/cerveja.jpg" alt="Cerveja">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Cerveja de garrafa de 600ml, servida bem gelada.<br>Acompanha uma porção de mandioca frita.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/vinho.jpg" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Vinhos das melhores vinícolas do Mundo.<br>
+                                            Temos vinhos de países como Chile, Argentina, Suiça e Itália.
+                                        </p>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <!-- Menu Entradas -->
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>
+                                            Deliciosos aperitivos.<br>Acompanha salame, tomate cereja, torradas entre outros.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>
+                                            Deliciosos aperitivos.<br>Acompanha salame, tomate cereja, torradas entre outros.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>
+                                            Deliciosos aperitivos.<br>Acompanha salame, tomate cereja, torradas entre outros.
+                                        </p>
+                                    </div>                                     
+                                </div>
+                            </div>
+
+                            <!-- Menu Pratos principais -->
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/pratos/pizza.jpg" alt="Pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Pizza assada em forno a lenha.<br>Temos mais de 50 sabores.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/pratos/salmao.jpg" alt="Salmão">
+                                        <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                        <p>
+                                            Salmão grelhado com tempero especial, acompanhado de legumes frescos.
+                                        </p>
+                                    </div> 
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/pratos/pizza.jpg" alt="Pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Pizza assada em forno a lenha.<br>Temos mais de 50 sabores.
+                                        </p>
+                                    </div>  
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/pratos/salmao.jpg" alt="Salmão">
+                                        <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                        <p>
+                                            Salmão grelhado com tempero especial, acompanhado de legumes frescos.
+                                        </p>
+                                    </div>                                  
+                                </div>
+                            </div>
+
+                            <!-- Menu sobremesas -->
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/sobremesas/bolo.jpg" alt="Bolo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo</h5>
+                                        <p>
+                                            Delicioso bolo caseiro com recheios variados. Ideal para qualquer ocasião.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/sobremesas/cupcake.jpg" alt="Cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>
+                                            Cupcakes decorados com cobertura cremosa, disponíveis em diversos sabores.
+                                        </p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5 mb-lg-0">
+
+                        <div id="alertas-mensagens"></div> <!-- Aqui será informado os alertas de sucesso e de erro -->
+
+                        <form id="formulario">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="nome">Seu nome</label>
+                                <input class="form-control" type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="email">Seu email</label>
+                                <input placeholder="email@email.com" class="form-control" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="telefone">Seu telefone (opcional)</label>
+                                <input class="form-control" type="tel" id="telefone" name="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" maxlength="250" required></textarea>
+                            </div>
+                            <button id="buttonForm" type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua das Orquídeas, 12-39, Jardim das flores, Bauru-SP, CEP 17012-345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="pb-3 pt-3">
+        <div class="container">
+            <h4 class="text-center fw-bold fs-5">2024 &copy; Sabores do Chef Bistrô - Todos os direitos reservados.</h4>
+            <h5 class="text-center fw-bold fs-6">Desenvolvido por Vinicius Baptista</h5>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Link para instalar o bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

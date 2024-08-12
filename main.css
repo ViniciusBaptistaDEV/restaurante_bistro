@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: #F44336;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #E53935;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover,
+footer {
+    color: #fff;
+}
+
+.section-title {
+    font-family: "Pacifico", cursive;
+}
+
+.section-title span {
+    color: #E53935;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+#buttonMenu:focus, #buttonMenu:active {
+    box-shadow: none;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+#sobre-o-restaurante,
+#cardapio {
+    background-color: #FFD3D3;
+}
+
+.text-colored {
+    color: #E53935;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco #buttonForm {
+    background-color:  #E53935;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #E53935;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#fale-conosco button:hover {
+    transform: scale(0.98); /* Recolhe o botão para 95% do seu tamanho original */
+}
+
+label.error {
+    display: block;
+    margin-top: 8px;
+    background-color: rgb(131, 30, 30);
+    color: white;
+    max-width: 240px;
+}
+
+#formulario textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #F44336;
+
+}
+
+
+
