@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $('#telefone').mask('(00) 000000000');
+    $('#celular').mask('(00) 00000-0000');
+    $('#telefone').mask('(00) 0000-0000');
 
     /* Validação "Entre em contato" - INICIO*/ 
     $('#formulario').validate({
@@ -8,7 +9,7 @@ $(document).ready(function(){
             nome: {
                 required: true
             },
-            telefone: {
+            celular: {
                 required: true
             },
             email: {
@@ -21,8 +22,8 @@ $(document).ready(function(){
             nome: {
                 required: "Por favor, insira seu nome."
             },
-            telefone: {
-                required: "Por favor, insira seu telefone."
+            celular: {
+                required: "Por favor, insira seu celular."
             },
             email: {
                 required: "Por favor, insira seu email.",

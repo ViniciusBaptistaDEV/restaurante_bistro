@@ -341,19 +341,23 @@
                         <form id="formulario">
                             <div class="mb-3">
                                 <label class="form-label fw-bold text-colored" for="nome">Seu nome</label>
-                                <input class="form-control" type="text" id="nome" name="nome" required>
+                                <input placeholder="Digite seu nome" class="form-control" type="text" id="nome" name="nome" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label fw-bold text-colored" for="email">Seu email</label>
                                 <input placeholder="email@email.com" class="form-control" type="email" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="celular">Seu celular</label>
+                                <input placeholder="Digite seu celular" class="form-control" type="tel" id="celular" name="celular">
+                            </div>
+                            <div class="mb-3">
                                 <label class="form-label fw-bold text-colored" for="telefone">Seu telefone (opcional)</label>
-                                <input class="form-control" type="tel" id="telefone" name="telefone">
+                                <input placeholder="Digite seu telefone" class="form-control" type="tel" id="telefone" name="telefone">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" maxlength="250" required></textarea>
+                                <textarea placeholder="Digite sua mensagem" class="form-control" id="mensagem" name="mensagem" maxlength="250" required></textarea>
                             </div>
                             <button id="buttonForm" type="submit" class="btn fw-bold">Enviar</button>
                         </form>
